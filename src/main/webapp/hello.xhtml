@@ -6,13 +6,22 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 
 <h:head>
-	<title>JSF 2.0 Hello World</title>
+	<title>Add your info</title>
 </h:head>
 <h:body>
-	<h3>JSF 2.0 Hello World Example - hello.xhtml</h3>
-	<h:form>
-		<h:inputText value="#{helloBean.name}"></h:inputText>
-		<h:commandButton value="Welcome Me" action="welcome"></h:commandButton>
-	</h:form>
+<h4> name:  Petar Nyagolov</h4>
+	<h4>facNo. 26010</h4>
+	<h4>course: Soft Tech</h4>
+	<h4>birth date : 29.04.1989</h4>
+	<h4>years : #{2019-1989}</h4>
+	<h4>zodiac sign: #{helloBean.zodiac}</h4>#{2019-helloBean.birth}
+	<h3>Add your info</h3>
+	<!--<h:form>
+	  <label>Name </label>	<h:inputText value="#{helloBean.name}"></h:inputText><br/>
+	<label>facNo. </label>	<h:inputText value="#{helloBean.fac}"></h:inputText><br/>
+		<label>special </label><h:inputText value="#{helloBean.special}"></h:inputText><br/>
+		<label>birth  </label><h:inputText value="#{helloBean.birth}"></h:inputText><br/>
+		<h:commandButton value="submit info" action="welcome"></h:commandButton>
+	</h:form>-->
 </h:body>
 </html>
